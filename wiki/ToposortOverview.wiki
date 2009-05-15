@@ -34,6 +34,7 @@ Let’s modify the rules:
 ||Rule set #2||
 || 1. Each triple, which contains no b-nodes, is a subgraph by itself (single triple subgraph) <br/> 2. Each triple having anonymous subject and object, and specific verb, is a subgraph by itself <br/> 3. In graph of remaining triples all connected component is a separate subgraph||
 _(which verbs to consider specific depends on ontology)_
+
 [ExapmleBCluster]
 
 == Generic approach to define subgraph ==
