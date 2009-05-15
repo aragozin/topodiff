@@ -1,5 +1,5 @@
 #summary Introduction to algorithm
-#labels Phase-Requirements,Phase-Design,toposort
+#labels Phase-Requirements,Phase-Design,toposort,Featured
 _Please also look at [http://www.w3.org/DesignIssues/Diff], this article will give you good overview of problem._
 = Introduction =
 
