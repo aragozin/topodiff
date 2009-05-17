@@ -1,4 +1,4 @@
-#summary Introduction to algorithm
+#summary Introduction to diff algorithm
 #labels Phase-Requirements,Phase-Design,toposort,Featured
 _Please also look at [http://www.w3.org/DesignIssues/Diff], this article will give you good overview of problem._
 = Introduction =
@@ -13,7 +13,7 @@ These are actually two faces of same problem, solution to either of them will so
 ||Normal serialized form (NSF) of graph - it is some binary presentation of graph, which satisfies following conditions <br> 1. Every graph has only one possible NSF <br/> 2. If two graphs are isomorphic they have equivalent  NSF||
 
 RDF graph is a set of triples. If we could establish linear order over triples, it would be possible to define NSF as sorted list of triples. Unfortunately it is not possible because triple may contain b-nodes and we cannot compare b-nodes without context. But if we define some distinguishing context for b-node we can define linear orders over triples, and sort graph in unique way.
-[ToposortAlgorithm Toposort] algorithm implements this idea.
+[ToposortAlgorithm TOPOSORT] algorithm implements this idea.
 
 Now we have normal serialized presentation of graph. We can use it directly to calculate difference, but actually this form is not very suitable for it. There are two reasons why it is not good for diff:
   # [ToposortAlgorithm Toposort] can be quite slow on large graphs
